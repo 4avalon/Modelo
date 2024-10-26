@@ -1,0 +1,16 @@
+/*
+==================================================================
+Arquivo: colors.css
+Descrição: Este arquivo define as cores globais utilizadas no projeto, incluindo variáveis para cores primárias, secundárias, de fundo, texto e estados (sucesso, erro, aviso).
+Importância: Garante consistência nas cores utilizadas no projeto, facilitando alterações de paleta e ajustes visuais sem necessidade de modificar múltiplos arquivos.
+Como Funciona: 
+  - Define variáveis de cores para uso global em todos os arquivos CSS.
+  - Inclui paletas de cores para diferentes contextos (fundo, texto, bordas, etc.).
+  - Oferece classes utilitárias para aplicar cores diretamente em elementos específicos.
+Recomendações: 
+  - Use as variáveis definidas aqui em todos os estilos do projeto para garantir consistência.
+  - Evite utilizar cores hexadecimais, RGB ou HSL diretamente em outros arquivos CSS; use as variáveis deste arquivo.
+Observações: 
+  - As cores definidas aqui são baseadas na identidade visual do projeto e podem ser facilmente ajustadas conforme necessário.
+==================================================================
+*/

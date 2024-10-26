@@ -1,0 +1,21 @@
+/*
+==================================================================
+Arquivo: typography.css
+Descrição: Este arquivo contém estilos utilitários de tipografia para o projeto, incluindo configurações de 
+fontes, tamanhos, pesos, espaçamentos de linha e estilos para títulos e parágrafos.
+Importância: Centraliza as definições de tipografia, garantindo uma apresentação de texto consistente e 
+alinhada com a identidade visual do projeto.
+Como Funciona: 
+  - Define classes para tamanhos de fonte padrão (pequeno, médio, grande, extra grande).
+  - Ajusta pesos de fonte, espaçamento de linha e margens para textos e títulos.
+  - Inclui estilos para diferentes elementos de texto, como parágrafos, listas, citações e cabeçalhos.
+  - Oferece classes utilitárias para formatação rápida de texto.
+Recomendações: 
+  - Use as classes e estilos definidos aqui para todo o texto do projeto, evitando estilos inline ou 
+  personalizados em outros arquivos.
+  - Verifique a legibilidade das fontes em diferentes dispositivos e tamanhos de tela.
+Observações: 
+  - A tipografia é uma parte fundamental da identidade visual, então mantenha as definições aqui 
+  consistentes e claras.
+==================================================================
+*/

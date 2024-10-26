@@ -1,0 +1,18 @@
+/*
+==================================================================
+Arquivo: nav.css
+Descrição: Este arquivo define os estilos específicos para a barra de navegação e menus do site, incluindo cores, layout, tipografia e comportamento de dropdowns.
+Importância: Garante que a navegação do site seja clara, consistente e intuitiva, proporcionando uma boa experiência de usuário.
+Como Funciona: 
+  - Configura a barra de navegação com layout, cores e espaçamentos específicos.
+  - Define estilos para links e botões de navegação, incluindo efeitos de hover e foco.
+  - Aplica estilos para menus dropdowns, ajustando transições e animações.
+  - Ajusta tipografia dos itens de navegação, garantindo legibilidade.
+  - Inclui regras de responsividade para adaptar a navegação em dispositivos móveis.
+Recomendações: 
+  - Use classes específicas para cada tipo de menu e evite estilos genéricos que possam afetar outros elementos.
+  - Verifique a responsividade para assegurar que a navegação funcione bem em diferentes tamanhos de tela.
+Observações: 
+  - Evite adicionar estilos que não estejam diretamente relacionados à navegação. Use este arquivo exclusivamente para o design de menus e barras de navegação.
+==================================================================
+*/

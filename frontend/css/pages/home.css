@@ -1,0 +1,23 @@
+/*
+==================================================================
+Arquivo: home.css
+Descrição: Este arquivo contém os estilos exclusivos da página inicial, incluindo ajustes visuais 
+específicos para banners, seções de destaque e elementos que só aparecem na home.
+Importância: Focado em garantir que a página inicial seja visualmente atraente e funcional, destacando 
+elementos chave para engajar os visitantes logo na primeira visita.
+Como Funciona: 
+  - Aplica estilos únicos para seções específicas da home, como banners principais e CTAs destacados.
+  - Ajusta o layout da página inicial, personalizando espaçamentos, alinhamentos e tamanhos específicos.
+  - Inclui animações e transições que aparecem apenas na home para dar dinamismo à página.
+  - Faz ajustes de responsividade apenas para elementos exclusivos da home, assegurando uma boa apresentação
+   em dispositivos móveis.
+Recomendações: 
+  - Mantenha este arquivo focado nos elementos únicos da página inicial. Use classes específicas para evitar
+   conflito com outros estilos globais.
+  - Teste regularmente a página inicial em diferentes dispositivos para garantir que os ajustes de layout e
+   animações estejam funcionando corretamente.
+Observações: 
+  - Evite adicionar estilos que sejam utilizados em outras páginas. O `home.css` deve conter apenas o que é
+   exclusivo da home.
+==================================================================
+*/

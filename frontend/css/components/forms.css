@@ -1,0 +1,18 @@
+/*
+==================================================================
+Arquivo: forms.css
+Descrição: Este arquivo define os estilos específicos para formulários do site, incluindo campos de entrada, botões, mensagens de erro e comportamento responsivo.
+Importância: Garante que todos os formulários tenham uma aparência e comportamento consistentes, alinhados com o design do projeto.
+Como Funciona: 
+  - Define estilos para campos de entrada, ajustando bordas, cores e tamanhos.
+  - Configura botões de formulário com cores e efeitos consistentes.
+  - Aplica estilos para mensagens de erro e validação, melhorando a usabilidade.
+  - Ajusta labels e textos auxiliares para assegurar legibilidade.
+  - Inclui regras de responsividade para adaptar formulários a diferentes dispositivos.
+Recomendações: 
+  - Use classes específicas para cada tipo de campo e evite estilos genéricos que possam afetar elementos fora de formulários.
+  - Verifique o comportamento de validação e foco dos campos para garantir uma boa experiência de usuário.
+Observações: 
+  - Evite adicionar estilos que não estejam diretamente relacionados a formulários. Use este arquivo exclusivamente para o design de elementos de formulário.
+==================================================================
+*/

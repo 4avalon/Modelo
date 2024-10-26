@@ -1,0 +1,16 @@
+/*
+==================================================================
+Arquivo: style.css
+Descrição: Este arquivo define os estilos globais aplicados ao projeto. Ele inclui reset de estilos padrão, configurações de cores, tipografia e layout, além de classes utilitárias para ajustes rápidos.
+Importância: Estabelece a base visual do site, garantindo consistência e fácil manutenção.
+Como Funciona: 
+  - Aplica reset de estilos para remover diferenças de navegadores.
+  - Define as cores principais para o projeto, que serão usadas em todo o site.
+  - Configura a tipografia padrão, ajustando tamanhos, espaçamentos e fontes.
+  - Inclui estilos gerais de layout, como largura máxima da página e estrutura básica.
+Recomendações: 
+  - Utilize as classes definidas aqui para ajustes rápidos, mas prefira criar estilos específicos para componentes ou páginas quando necessário.
+Observações: 
+  - Evite adicionar regras específicas que estejam limitadas a uma única página ou componente.
+==================================================================
+*/

@@ -1,0 +1,20 @@
+/*
+==================================================================
+Arquivo: grid.css
+Descrição: Este arquivo contém classes utilitárias para gerenciamento de layout baseado em grid, incluindo 
+configurações de colunas, espaçamento, alinhamento e responsividade.
+Importância: Simplifica a criação de layouts responsivos, oferecendo uma estrutura de grid reutilizável em 
+todo o projeto.
+Como Funciona: 
+  - Define classes utilitárias para criar grids de várias colunas.
+  - Inclui espaçamentos padronizados entre colunas e linhas.
+  - Oferece alinhamentos verticais e horizontais para elementos dentro do grid.
+  - Adapta o layout para diferentes tamanhos de tela usando breakpoints responsivos.
+Recomendações: 
+  - Utilize as classes de grid definidas aqui para estruturar o layout de páginas e seções.
+  - Evite criar grids personalizados em outros arquivos CSS; centralize tudo neste arquivo para consistência.
+Observações: 
+  - As classes de grid são pensadas para flexibilidade, mas ajustes específicos para componentes podem ser 
+  necessários.
+==================================================================
+*/

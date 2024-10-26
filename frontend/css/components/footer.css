@@ -1,0 +1,18 @@
+/*
+==================================================================
+Arquivo: footer.css
+Descrição: Este arquivo define os estilos específicos para o rodapé do site, incluindo cores, espaçamentos, tipografia e comportamento responsivo.
+Importância: Garante que o rodapé tenha uma identidade visual clara e consistente, separada do restante do conteúdo da página.
+Como Funciona: 
+  - Configura cores e fundos específicos para o rodapé.
+  - Define espaçamentos e alinhamentos para organizar elementos.
+  - Ajusta a tipografia do rodapé, garantindo legibilidade.
+  - Aplica estilos a links e ícones para manter a consistência.
+  - Inclui regras de responsividade para adaptar o rodapé a diferentes tamanhos de tela.
+Recomendações: 
+  - Utilize classes específicas para o rodapé e evite estilos genéricos que possam afetar outras partes do layout.
+  - Verifique a responsividade para garantir que o rodapé se adapte bem a dispositivos móveis.
+Observações: 
+  - Evite adicionar estilos que não estejam diretamente relacionados ao rodapé. Use este arquivo exclusivamente para o design da área de rodapé.
+==================================================================
+*/

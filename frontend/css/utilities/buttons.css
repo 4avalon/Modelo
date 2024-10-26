@@ -1,0 +1,17 @@
+/*
+==================================================================
+Arquivo: buttons.css
+Descrição: Este arquivo contém estilos utilitários para botões em todo o site, incluindo configurações de cores, tamanhos, bordas, efeitos de hover e transições.
+Importância: Centraliza os estilos de botões, garantindo consistência visual para ações clicáveis em todas as páginas do site.
+Como Funciona: 
+  - Define classes utilitárias para diferentes tamanhos de botões (pequeno, médio, grande).
+  - Aplica estilos padronizados de cores, com variações para diferentes estados (hover, active, disabled).
+  - Configura bordas, padding e alinhamento de texto para manter botões uniformes.
+  - Inclui transições suaves para efeitos de hover, melhorando a interação do usuário.
+Recomendações: 
+  - Utilize as classes de botões definidas aqui em todo o projeto para manter a consistência.
+  - Evite criar estilos de botão diretamente em outros arquivos CSS; centralize tudo neste arquivo.
+Observações: 
+  - Se precisar de botões personalizados para um componente específico, crie variações baseadas nos estilos deste arquivo.
+==================================================================
+*/
