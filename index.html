@@ -1,75 +1,63 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Projeto Modelo - Avalon</title>
-    <!-- Favicon -->
-    <link rel="icon" href="frontend/assets/images/favicon.ico" type="image/x-icon">
-    
-    <!-- CSS Global -->
-    <link rel="stylesheet" href="frontend/css/style.css">
-    <!-- CSS Components -->
-    <link rel="stylesheet" href="frontend/css/components/nav.css">
-    <link rel="stylesheet" href="frontend/css/components/footer.css">
-    <link rel="stylesheet" href="frontend/css/components/forms.css">
-    <!-- CSS Pages -->
-    <link rel="stylesheet" href="frontend/css/pages/home.css">
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="frontend/css/components/navResponsive.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <header>
-        <nav class="navigation">
-            <div class="logo">
-                <a href="#"><img src="frontend/assets/images/logo.png" alt="Logo"></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
+<!--
+==================================================================
+Arquivo: index.html
+Descrição: Página inicial do Modelo, servindo como base para múltiplas funcionalidades — incluindo 
+loja online e portal de eventos. Este arquivo define a estrutura principal do site, centralizando 
+variáveis e links importantes que impactam toda a aplicação, com destaque para gestão de usuários e autenticação.
+Importância: Centraliza todas as funcionalidades, mantendo-as organizadas e modulares. Serve como ponto 
+de entrada para definir o visual e o comportamento inicial da aplicação, abrangendo desde navegação
+ até segurança de dados do usuário.
+Estrutura Geral:
+  - Meta Tags e SEO: Inclui informações sobre o site, como descrição, palavras-chave, idioma padrão
+   e acessibilidade.
+  - Links Externos: Referências a estilos (CSS), scripts (JavaScript), e bibliotecas essenciais para
+   funcionalidades dinâmicas.
+  - Header: Contém elementos principais, como logotipo, menu de navegação, barra de pesquisa e ícones
+   de login.
+  - Main: Área principal que abriga diferentes seções, como produtos, eventos, calendário e agenda,
+   adaptando-se ao contexto da loja online e portal de eventos.
+  - Footer: Contém informações adicionais, links rápidos, contato, e ícones de redes sociais.
+Variáveis Definidas:
+  - `siteTitle`: Define o título principal do site para SEO e cabeçalho.
+  - `siteDescription`: Breve descrição do site para SEO e `<meta>` tags.
+  - `themeColors`: Paleta de cores principal e secundária para personalização do tema.
+  - `logoPath`: Caminho do logotipo, usado no cabeçalho e rodapé.
+  - `menuItems`: Lista de itens no menu de navegação para navegação fácil entre funcionalidades.
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Bem-vindo ao Projeto Modelo</h1>
-        <p>Explorando a estrutura base para novos projetos</p>
-    </section>
-
-    <!-- Main Content -->
-    <main>
-        <section class="content">
-            <h2>Sobre o Projeto</h2>
-            <p>Este é um projeto modelo desenvolvido para seguir o padrão Avalon, facilitando a criação de novos sites e projetos.</p>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-content">
-            <p>&copy; 2024 Projeto Modelo - Todos os direitos reservados.</p>
-            <ul class="social-links">
-                <li><a href="#"><img src="frontend/assets/images/facebook-icon.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="frontend/assets/images/instagram-icon.png" alt="Instagram"></a></li>
-                <li><a href="#"><img src="frontend/assets/images/linkedin-icon.png" alt="LinkedIn"></a></li>
-            </ul>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="frontend/js/main.js"></script>
-    <script src="frontend/js/components/navResponsive.js"></script>
-    <script src="frontend/js/components/navSmoothScrollEffect1.js"></script>
-    <script src="frontend/js/components/navSmoothScrollFixedTime.js"></script>
-</body>
-</html>
+  - `footerText`: Texto padrão exibido no rodapé, contendo direitos autorais e links rápidos.
+  - `apiEndpoints`: URLs das APIs para carregar dados dinâmicos, como produtos, eventos, e informações 
+  do usuário.
+  - `calendarSettings`: Configurações de exibição do calendário, como modo de visualização e data inicial.
+  - `productCategories`: Categorias de produtos que serão exibidas na loja online.
+  - `eventTypes`: Tipos de eventos suportados e configuráveis.
+  - `defaultLanguage`: Idioma padrão do site, facilitando a tradução e personalização de conteúdo.
+  - `analyticsID`: ID do serviço de análise web, para monitorar visitas e interações dos usuários.
+  - **Login e Autenticação**:
+    - `authEndpoints`: URLs para APIs de autenticação (login, registro, logout, recuperação de senha).
+    - `loginStatus`: Booleano para verificar se o usuário está logado (`true` ou `false`).
+    - `userRole`: Define o papel do usuário (`admin`, `cliente`, `organizador`, etc.) para controle de 
+    permissões.
+    - `tokenStorage`: Configuração para armazenamento de tokens de autenticação (localStorage ou cookies).
+    - `passwordPolicy`: Política de senhas, incluindo requisitos mínimos (tamanho, caracteres especiais, etc.).
+  - **Componentes de Interface**:
+    - `bannerImages`: Imagens para carrosséis e banners promocionais.
+    - `socialMediaLinks`: Links para ícones de redes sociais no rodapé.
+    - `modalSettings`: Configurações de modais de notificação ou pop-ups.
+  - **Preferências do Usuário**:
+    - `themeMode`: Modo de tema (`claro` ou `escuro`) para personalização da interface.
+    - `defaultTimeFormat`: Formato de tempo padrão para eventos e agenda (`24h` ou `12h`).
+Links Importantes:
+  - **CSS**: Define a estilização básica do site, personalizando cores, fontes, layout e estilo de componentes dinâmicos.
+  - **JavaScript**: Scripts para interação, animações, manipulação do DOM, lógica de autenticação e funcionalidades de eventos.
+  - **Bibliotecas**: Carrega bibliotecas externas necessárias, como Day.js para datas, Nodemailer para notificações, e outras que facilitam funcionalidades específicas.
+Recomendações:
+  - Mantenha as definições centralizadas no início do arquivo para facilitar futuras alterações e manutenções.
+  - Utilize classes e IDs padronizados para manter a consistência da aplicação e facilitar a estilização.
+  - Garanta que a lógica de autenticação seja segura, usando tokens JWT e armazenamento seguro para informações sensíveis.
+  - Centralize as funcionalidades em seções distintas no HTML para que a loja online e o portal de eventos coexistam sem conflitos.
+Observações:
+  - Revise e atualize periodicamente as variáveis globais para acompanhar mudanças de design, conteúdo, e novas funcionalidades.
+  - As funcionalidades de loja online e portal de eventos são separadas, mas compartilham elementos visuais e de navegação.
+  - A segurança dos dados do usuário é uma prioridade; proteja senhas e informações sensíveis utilizando criptografia segura e boas práticas de armazenamento.
+==================================================================
+-->
