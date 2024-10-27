@@ -1,0 +1,78 @@
+<!--
+==================================================================
+Arquivo: admin.html
+Descrição: Página de administração da loja Avalon. Esta página é dedicada à gestão de produtos, permitindo que funcionários autorizados adicionem, editem e removam produtos da loja online. Também serve como painel de controle para gerenciar informações cruciais da loja, garantindo que o conteúdo esteja sempre atualizado.
+Importância: Centraliza a gestão dos produtos da loja, facilitando a administração de forma segura e organizada, separando o conteúdo público do conteúdo administrativo.
+Estrutura Geral:
+  - Cabeçalho: Exibe o título do painel de administração.
+  - Formulário de Adição de Produtos: Permite que novos produtos sejam cadastrados com informações detalhadas.
+  - Sessão de Gestão de Produtos: Espaço reservado para edição e remoção de produtos existentes (a ser implementado).
+  - Rodapé: Informações de direitos autorais e links de suporte.
+Variáveis Definidas:
+  - Nenhuma variável global específica é definida aqui, mas as interações são controladas através do JavaScript conectado ao formulário.
+Links Importantes:
+  - **CSS**: Inclui estilos principais e componentes específicos de formulários.
+  - **JavaScript**: Carrega o script principal para a administração de produtos, lidando com comunicação de API e validações.
+Recomendações:
+  - Mantenha o acesso a esta página restrito apenas a usuários autenticados e autorizados.
+  - Estilize o formulário de forma clara para facilitar o uso por funcionários com diferentes níveis de conhecimento técnico.
+  - Valide os dados inseridos no formulário tanto no front-end quanto no back-end para garantir segurança e consistência.
+Observações:
+  - Este é um ponto central de gestão do conteúdo da loja; quaisquer mudanças devem ser bem testadas antes de serem aplicadas.
+==================================================================
+-->
+<!-- admin.html - Página de Administração -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração - Loja Avalon</title>
+    
+    <!-- Links para CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components/forms.css">
+
+    <!-- Script JavaScript Principal -->
+    <script defer src="js/pages/adminProducts.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho da Página de Administração -->
+    <header>
+        <h1>Painel de Administração</h1>
+    </header>
+
+    <!-- Formulário para Adicionar Novos Produtos -->
+    <main>
+        <section id="admin-section">
+            <h2>Adicionar Novo Produto</h2>
+            <form id="add-product-form">
+                <label for="productName">Nome do Produto:</label>
+                <input type="text" id="productName" name="nome" required>
+
+                <label for="productDescription">Descrição:</label>
+                <textarea id="productDescription" name="descricao" required></textarea>
+
+                <label for="productPrice">Preço:</label>
+                <input type="number" id="productPrice" name="preco" step="0.01" required>
+
+                <label for="productCategory">Categoria:</label>
+                <input type="text" id="productCategory" name="categoria" required>
+
+                <label for="productImage">Imagem:</label>
+                <input type="file" id="productImage" name="imagem" required>
+
+                <label for="productStock">Estoque:</label>
+                <input type="number" id="productStock" name="estoque" required>
+
+                <button type="submit">Adicionar Produto</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Avalon. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

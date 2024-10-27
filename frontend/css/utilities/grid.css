@@ -18,3 +18,76 @@ Observações:
   necessários.
 ==================================================================
 */
+/* ==========================================================================
+   Arquivo: grid.css
+   Descrição: Sistema de grid responsivo para o layout do site Avalon, permitindo organizar o conteúdo de forma modular e consistente. Utiliza um sistema baseado em 12 colunas para garantir flexibilidade em diferentes resoluções de tela.
+   Importância: Facilita a construção de layouts complexos, mantendo a modularidade e responsividade do site.
+   ========================================================================== */
+
+/* Container Responsivo */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Sistema de Colunas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px; /* Espaçamento negativo para alinhar colunas */
+}
+
+.col {
+    padding: 0 15px;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+/* Colunas Responsivas Baseadas em 12 Colunas */
+.col-1 { flex: 0 0 8.33%; max-width: 8.33%; }
+.col-2 { flex: 0 0 16.66%; max-width: 16.66%; }
+.col-3 { flex: 0 0 25%; max-width: 25%; }
+.col-4 { flex: 0 0 33.33%; max-width: 33.33%; }
+.col-5 { flex: 0 0 41.66%; max-width: 41.66%; }
+.col-6 { flex: 0 0 50%; max-width: 50%; }
+.col-7 { flex: 0 0 58.33%; max-width: 58.33%; }
+.col-8 { flex: 0 0 66.66%; max-width: 66.66%; }
+.col-9 { flex: 0 0 75%; max-width: 75%; }
+.col-10 { flex: 0 0 83.33%; max-width: 83.33%; }
+.col-11 { flex: 0 0 91.66%; max-width: 91.66%; }
+.col-12 { flex: 0 0 100%; max-width: 100%; }
+
+/* Alinhamento e Espaçamento */
+.align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.align-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.align-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* Espaçamento entre Colunas */
+.gap-small {
+    gap: 10px;
+}
+
+.gap-medium {
+    gap: 20px;
+}
+
+.gap-large {
+    gap: 30px;
+}

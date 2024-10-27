@@ -14,3 +14,63 @@ Observações:
   - Evite adicionar regras específicas que estejam limitadas a uma única página ou componente.
 ==================================================================
 */
+/* ==========================================================================
+   Arquivo: style.css
+   Descrição: Estilos globais para o site Avalon, definindo configurações básicas de layout, tipografia e resets.
+   Importância: Centraliza estilos padrão para garantir uma base sólida e consistente em todo o site.
+   ========================================================================== */
+
+/* Reset de CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações Globais */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth; /* Efeito suave ao rolar a página */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte principal */
+    line-height: 1.5;
+    background-color: #f5f5f5; /* Cor de fundo padrão */
+    color: #333333; /* Cor de texto padrão */
+}
+
+/* Links */
+a {
+    color: #3498db; /* Cor do link padrão */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+a:hover {
+    color: #2980b9; /* Cor do link ao passar o mouse */
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Layout de Página */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Títulos e Tipografia */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Negrito para títulos */
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}

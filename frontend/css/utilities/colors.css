@@ -14,3 +14,65 @@ Observações:
   - As cores definidas aqui são baseadas na identidade visual do projeto e podem ser facilmente ajustadas conforme necessário.
 ==================================================================
 */
+/* ==========================================================================
+   Arquivo: colors.css
+   Descrição: Paleta de cores para o site Avalon, com classes utilitárias que permitem fácil aplicação de cores em elementos específicos. Centraliza todas as cores principais, secundárias e de destaque, garantindo consistência visual.
+   Importância: Facilita a manutenção e personalização do site, permitindo aplicar cores rapidamente em qualquer parte da interface.
+   ========================================================================== */
+
+/* Cores Primárias */
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+/* Cores Secundárias */
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+/* Cores de Destaque */
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.bg-accent {
+    background-color: var(--accent-color) !important;
+}
+
+/* Cores Neutras */
+.text-white {
+    color: #ffffff !important;
+}
+
+.bg-white {
+    background-color: #ffffff !important;
+}
+
+.text-black {
+    color: #333333 !important;
+}
+
+.bg-black {
+    background-color: #333333 !important;
+}
+
+/* Bordas de Cor */
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+.border-secondary {
+    border-color: var(--secondary-color) !important;
+}
+
+.border-accent {
+    border-color: var(--accent-color) !important;
+}

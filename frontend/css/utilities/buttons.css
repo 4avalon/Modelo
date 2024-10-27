@@ -15,3 +15,54 @@ Observações:
   - Se precisar de botões personalizados para um componente específico, crie variações baseadas nos estilos deste arquivo.
 ==================================================================
 */
+/* ==========================================================================
+   Arquivo: buttons.css
+   Descrição: Estilos utilitários para botões no site Avalon, incluindo configurações de cores, tamanhos, bordas, efeitos de hover e transições. Garante a centralização dos estilos de botões para consistência visual.
+   Importância: Simplifica a manutenção e a consistência visual dos botões, oferecendo classes reutilizáveis para diferentes contextos.
+   ========================================================================== */
+
+/* Botões Básicos */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Botões Pequenos */
+.btn-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+/* Botões Grandes */
+.btn-large {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+}
+
+/* Botões de Destaque */
+.btn-accent {
+    background-color: var(--accent-color);
+}
+
+.btn-accent:hover {
+    background-color: darken(var(--accent-color), 10%);
+}

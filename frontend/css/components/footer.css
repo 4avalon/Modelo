@@ -16,3 +16,86 @@ Observações:
   - Evite adicionar estilos que não estejam diretamente relacionados ao rodapé. Use este arquivo exclusivamente para o design da área de rodapé.
 ==================================================================
 */
+/* ==========================================================================
+   Arquivo: footer.css
+   Descrição: Estilos para o rodapé do site Avalon, garantindo uma aparência clara e informativa. Inclui links rápidos, informações de contato e ícones de redes sociais.
+   Importância: Proporciona uma navegação complementar e informações essenciais no final da página, mantendo a consistência visual do projeto.
+   ========================================================================== */
+
+/* Estilos do Rodapé */
+footer {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* Links Rápidos */
+footer .quick-links {
+    margin-bottom: 1.5rem;
+}
+
+footer .quick-links h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer .quick-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+footer .quick-links a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+footer .quick-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Redes Sociais */
+footer .social-media {
+    margin-bottom: 1.5rem;
+}
+
+footer .social-media h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer .social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+footer .social-media a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-media a:hover img {
+    transform: scale(1.1);
+}
+
+/* Informações de Contato */
+footer .contact-info {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Direitos Autorais */
+footer .copyright {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}

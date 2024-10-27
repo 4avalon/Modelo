@@ -16,3 +16,80 @@ Observações:
   - Evite adicionar estilos que não estejam diretamente relacionados à navegação. Use este arquivo exclusivamente para o design de menus e barras de navegação.
 ==================================================================
 */
+/* ==========================================================================
+   Arquivo: nav.css
+   Descrição: Estilos para o menu de navegação do site Avalon, incluindo ajustes para diferentes tamanhos de tela e comportamento responsivo. Configura a aparência do menu principal, links, e ícones do menu.
+   Importância: Garante que a navegação seja clara e funcional em todas as resoluções, facilitando a interação do usuário com o site.
+   ========================================================================== */
+
+/* Navegação Principal */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+
+}
+
+
+.main-nav .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav .nav-list li {
+    margin: 0;
+}
+
+.main-nav .nav-list a {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.main-nav .nav-list a:hover {
+    color: var(--accent-color);
+}
+
+/* Menu Responsivo */
+.menu-toggle {
+    display: none; /* Oculto por padrão em telas grandes */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    display: block;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+}
+
+/* Ajustes para Dispositivos Móveis */
+@media screen and (max-width: 768px) {
+    .main-nav .nav-list {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: var(--primary-color);
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .main-nav .nav-list.open {
+        max-height: 300px; /* Expande o menu quando aberto */
+    }
+
+    .menu-toggle {
+        display: block; /* Visível em telas pequenas */
+    }
+}

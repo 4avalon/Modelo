@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Arquivo: theme.css
+   Descrição: Arquivo de configuração de tema para o site Avalon, incluindo suporte para temas claro e escuro. Este arquivo utiliza variáveis CSS para centralizar as definições de cores, permitindo fácil personalização e troca entre modos de visualização.
+   Importância: Centraliza as definições de estilo visual, facilitando a manutenção e a adaptação do site para diferentes temas. As variáveis CSS garantem consistência no design, mantendo a identidade visual do projeto.
+   Como Funciona:
+     - Define variáveis CSS para cores principais, secundárias e de destaque.
+     - Implementa um esquema de cores claro e escuro, adaptando-se automaticamente quando o tema muda.
+     - Utiliza a pseudo-classe `[data-theme="dark"]` para aplicar as variáveis do tema escuro.
+   Recomendações:
+     - Mantenha as definições de cores centralizadas nas variáveis CSS para fácil alteração.
+     - Utilize `var(--nome-da-cor)` sempre que possível ao definir cores em outros arquivos CSS.
+     - Adicione novas variáveis caso precise de mais opções de personalização no futuro.
+   Observações:
+     - As cores definidas aqui podem ser ajustadas de acordo com a identidade visual desejada.
+     - Para adicionar mais temas, crie novas variáveis e classes semelhantes às existentes.
+   ========================================================================== */
+
+/* ==========================================================================
+   Arquivo: theme.css
+   Descrição: Configurações de tema para o site Avalon, incluindo suporte para temas claro e escuro, utilizando variáveis CSS.
+   Importância: Centraliza a personalização do visual do site, permitindo fácil alteração de cores e estilos gerais.
+   ========================================================================== */
+
+/* Variáveis de Tema (Tema Claro) */
+:root {
+    --primary-color: #3498db;  /* Cor principal (azul claro) */
+    --secondary-color: #2ecc71; /* Cor secundária (verde suave) */
+    --accent-color: #e74c3c;    /* Cor de destaque (vermelho) */
+    --background-color: #ffffff; /* Cor de fundo para tema claro */
+    --text-color: #333333;      /* Cor do texto para tema claro */
+}
+
+/* Tema Escuro */
+[data-theme="dark"] {
+    --background-color: #333333; /* Cor de fundo para tema escuro */
+    --text-color: #f5f5f5;       /* Cor do texto para tema escuro */
+    --primary-color: #1abc9c;    /* Cor principal (verde água) no tema escuro */
+    --secondary-color: #9b59b6;  /* Cor secundária (roxo suave) no tema escuro */
+}
+
+/* Aplicação das Variáveis */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* Botões de Ação */
+button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
