@@ -30,13 +30,18 @@ Observações:
     background-color: var(--primary-color);
     padding: 1rem 2rem;
 
+    max-width: 1200px;
+    margin: 0 auto;
+
+
 }
 
 
 .main-nav .nav-list {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
+    justify-content: flex-start; /* Centraliza os itens no espaço disponível */
 }
 
 .main-nav .nav-list li {
@@ -47,11 +52,15 @@ Observações:
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
-    transition: color 0.3s ease;
+    padding: 0.5rem 0; /* Adiciona espaçamento vertical nos links */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent; /* Linha sob o link */
 }
 
 .main-nav .nav-list a:hover {
     color: var(--accent-color);
+    border-bottom-color: var(--accent-color); /* Mostra linha sob o link ao passar o mouse */
+
 }
 
 /* Menu Responsivo */
@@ -71,8 +80,67 @@ Observações:
     transition: all 0.3s ease;
 }
 
+/* Barra de Pesquisa */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Empurra a barra de pesquisa para o lado direito */
+    margin-right: 1rem; /* Espaçamento antes do botão de login */
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    outline: none;
+    min-width: 150px; /* Largura mínima da barra de pesquisa */
+}
+
+.search-bar button {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.search-bar button:hover {
+    background-color: var(--accent-color); /* Cor de destaque ao passar o mouse */
+}
+
+/* Botão de Login */
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+
+.login-button button {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;  /* Aumenta o tamanho do texto (pode ajustar conforme necessário) */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+
+.login-button button:hover {
+    background-color: var(--secondary-color);
+}
+
 /* Ajustes para Dispositivos Móveis */
 @media screen and (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start; /* Alinhamento à esquerda no modo mobile */
+    }
+
     .main-nav .nav-list {
         flex-direction: column;
         position: absolute;
@@ -83,6 +151,7 @@ Observações:
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
+        padding: 0;
     }
 
     .main-nav .nav-list.open {
@@ -91,5 +160,17 @@ Observações:
 
     .menu-toggle {
         display: block; /* Visível em telas pequenas */
+    }
+
+    .search-bar {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 1rem;
+    }
+
+    .login-button {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 1rem;
     }
 }

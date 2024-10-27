@@ -51,16 +51,17 @@ form textarea {
     padding: 0.75rem;
     margin-bottom: 1.5rem;
     border: 1px solid #cccccc;
-    border-radius: 5px;
+    border-radius: 8px; /* Borda mais arredondada */
     background-color: #f9f9f9;
     color: var(--text-color);
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 form input:focus,
 form textarea:focus {
     border-color: var(--primary-color);
     outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3); /* Sombra suave ao focar */
 }
 
 /* Botão de Envio */

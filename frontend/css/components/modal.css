@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Arquivo: modal.css
+   Descrição: Estilos para janelas modais no site Avalon, incluindo o modal de login. Este arquivo define a 
+   aparência de janelas pop-up que aparecem sobre o conteúdo principal, permitindo interações sem sair da 
+   página atual.
+   Importância: Garante que as janelas modais sejam consistentes visualmente e se destaquem do conteúdo de 
+   fundo. Usado para funcionalidades como login, avisos e interações rápidas.
+   Como Funciona:
+     - Define o layout centralizado do modal com fundo semi-transparente.
+     - Inclui estilos para o conteúdo interno do modal, como formulários e botões de fechamento.
+     - Estiliza a animação de abertura e fechamento para melhorar a experiência do usuário.
+   Recomendações:
+     - Utilize o modal apenas para interações que precisam de atenção imediata do usuário.
+     - Evite sobrecarregar o modal com muitas informações; mantenha-o simples e direto ao ponto.
+     - Teste o modal em diferentes resoluções para garantir que ele fique centralizado e acessível.
+   Observações:
+     - Para adicionar novos modais, mantenha a estrutura e os estilos consistentes, reutilizando classes 
+     já existentes.
+     - A funcionalidade de exibição e ocultação é controlada através de JavaScript externo.
+   ========================================================================== */
+/* ==========================================================================
+   Arquivo: modal.css
+   Descrição: Estilos para modais, incluindo o modal de login. Garante que a janela pop-up seja centralizada
+    e estilizada adequadamente.
+   ========================================================================== */
+
+/* Estilos do Modal */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #333333;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0 1rem 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}

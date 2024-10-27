@@ -91,11 +91,13 @@ Observações:
     <link rel="stylesheet" href="frontend/css/components/footer.css">
     <link rel="stylesheet" href="frontend/css/components/forms.css">
     <link rel="stylesheet" href="frontend/css/components/nav.css">
+    <link rel="stylesheet" href="frontend/css/components/modal.css"> <!-- Importação do modal.css -->
     <link rel="stylesheet" href="frontend/css/pages/home.css">
     <link rel="stylesheet" href="frontend/css/utilities/buttons.css">
     <link rel="stylesheet" href="frontend/css/utilities/colors.css">
     <link rel="stylesheet" href="frontend/css/utilities/grid.css">
     <link rel="stylesheet" href="frontend/css/utilities/typography.css">
+
 
     
     <!-- Link para Ícone da Página -->
@@ -106,7 +108,7 @@ Observações:
 </head>
 <body>
     <!-- Cabeçalho do Site -->
-    <header>
+    <header class="container">
         <!-- Logotipo do Site -->
         <div class="logo">
             <a href="index.html">
@@ -114,7 +116,6 @@ Observações:
             </a>
         </div>
 
-        <!-- Menu de Navegação -->
         <!-- Menu de Navegação -->
         <nav class="main-nav">
             <ul class="nav-list">
@@ -125,21 +126,24 @@ Observações:
                 <li><a href="#agenda">Agenda</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+                      <!-- Barra de Pesquisa -->
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar..." aria-label="Pesquisar no site">
+                <button type="submit">
+                    <img src="assets/icons/search-icon.png" alt="?">
+                </button>
+            </div>
+                        <!-- Botão de Login -->
+            <div class="login-button">
+                <button id="openLoginModal">Login</button>
+            </div>
+
         </nav>
 
         <!-- Botão de Menu Responsivo -->
         <button class="menu-toggle">
             <span class="menu-icon"></span>
         </button>
-
-
-        <!-- Barra de Pesquisa -->
-        <div class="search-bar">
-            <input type="text" placeholder="Pesquisar..." aria-label="Pesquisar no site">
-            <button type="submit">
-                <img src="assets/icons/search-icon.png" alt="Ícone de pesquisa">
-            </button>
-        </div>
 
         <!-- Botão de Menu Responsivo -->
         <button class="menu-toggle">
@@ -150,7 +154,7 @@ Observações:
     <!-- Área Principal do Site (Main) -->
     <!-- Área Principal do Site (Main) -->
         <!-- Área Principal do Site (Main) -->
-    <main>
+    <main class="container" >
         <!-- Seção de Produtos -->
         <section id="produtos">
             <h2>Produtos</h2>
@@ -218,7 +222,7 @@ Observações:
 
     <!-- Rodapé será adicionado posteriormente -->
         <!-- Rodapé do Site -->
-    <footer>
+    <footer class="container">
         <!-- Links Rápidos -->
         <div class="quick-links">
             <h3>Links Rápidos</h3>
